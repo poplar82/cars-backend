@@ -52,8 +52,9 @@ public class CarService implements CarInterface {
 
     @EventListener(ApplicationReadyEvent.class)
     public void init() {
-        cars.add(Car.builder().id(1).mark("Kia").model("Optima").color(Color.RED).build());
-        cars.add(Car.builder().id(2).mark("Porsche").model("Cayenne").color(Color.BLACK).build());
-        cars.add(Car.builder().id(3).mark("Audi").model("S8").color(Color.BLACK).build());
+        cars.add(Car.builder().id(1).mark("Kia").model("Optima").color(Color.RED).yearOfProduction("2019").build());
+        cars.add(Car.builder().id(2).mark("Porsche").model("Cayenne").color(Color.BLACK).yearOfProduction("2015").build());
+        cars.add(Car.builder().id(3).mark("Audi").model("S8").color(Color.BLACK).yearOfProduction("2018").build());
+
     }
 }
